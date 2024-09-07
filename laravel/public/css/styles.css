@@ -1,0 +1,113 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.newsButton{
+    color: white;
+    background-color: #000045;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 10px;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.newsButton:hover{
+    color: #000045;
+    background-color: white;
+}
+.newsButton:disabled{
+    background-color: gray;
+    color: white;
+    border-color: black;
+    cursor: default;
+}
+
+.newsForm{
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    width: 500px;
+    margin: 5px;
+    padding: 10px;
+    color: #000045;
+    background-color: #f3f3ff;
+    border: 1px solid #000045;
+    border-radius: 10px;
+}
+.newsForm>span{
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+}
+.newsForm>input, .newsForm>textarea, .newsForm>select{
+    outline: none;
+    border-radius: 10px;
+    font-size: medium;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #000045;
+}
+textarea{
+    resize: none;
+    height: 150px;
+    font-family: inherit;
+}
+.newsForm>input[type=submit]{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left:calc(50% - 50px);
+}
+
+.newsUl{
+    padding: 0;
+}
+.newsUl>li{
+    border: 1px solid #000045;
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 700px;
+}
+.summaryDiv{
+    font-size: large;
+    font-weight: bold;
+    color: #000085;
+}
+.textDiv{
+    color: #000045;
+}
+
+.newsDiv{
+    margin: 5px;
+    padding: 10px;
+}
+.newsReadMoreButton{
+    color: white;
+    background-color: #000045;
+    font-size: x-small;
+    border-radius: 10px;
+    width: 70px;
+    padding: 5px;
+    margin-top: 10px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.newsReadMoreButton:hover{
+    color: #000045;
+    background-color: white;
+}
+.newsDiv>img{
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+.emailDiv{
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: #000085;
+}

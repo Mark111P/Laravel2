@@ -1,0 +1,10 @@
+{
+    "require": {
+        "laravelcollective/html": "^5.3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
+}
